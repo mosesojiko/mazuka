@@ -1,0 +1,314 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin:0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+#root {
+  height: 100%;
+  max-width: 100%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header'
+    'main'
+    'footer';
+  height: 100%;
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.mazuka-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
+}
+
+.carousal {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #87ceeb;
+}
+
+.description {
+  /*background-color: #fff !important;
+  color: #000080; */
+  color:#fff;
+  font-size: 18px;
+  align-self: flex-start;
+  max-width: 40%;
+  padding: 10px;
+  margin: 5px;
+  text-align: justify;
+  font-weight: bolder;
+  border-radius: 10px;
+  /*box-shadow: 0 4px 8px 0 gray,
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+}
+
+.carousal-content {
+  max-width: 50%;
+  margin: 5px;
+}
+
+img {
+  max-height: 250px;
+  height: auto;
+  width: 100%;
+}
+
+.caro-div {
+  max-height: 499 !important;
+  max-width: 400px;
+}
+
+.caro-div>img {
+  object-fit: contain !important;
+  border-radius:10px;
+}
+
+.caro-div>p {
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #00688b;
+  color: #fff;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.ourservice-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  max-width: 95%;
+  background-color: black;
+}
+
+.ourservices > h2 {
+  background-color: #00688b;
+  color: #fff;
+  padding: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+}
+.ourservice-container > div {
+  width: 300px;
+  max-width: 400px;
+  margin: 5px;
+  padding: 5px;
+}
+
+.ourservice-container > div > img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.ourservice-container > div > h3 {
+  text-align: center;
+}
+
+/* experience section */
+
+.experience-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 92%;
+}
+
+.experience {
+  max-width: 50%;
+}
+
+.experience > h2 {
+  text-align: center;
+}
+
+.experience > p {
+  text-align: center;
+  color: #4a4a4a;
+  font-size: 14px;
+}
+
+.clients {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.clients > div > img {
+  width: 60px;
+  margin: 10px;
+  align-items: center;
+}
+
+.policy {
+  max-width: 50%;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #00688b;
+  color: #fff;
+  padding: 5px;
+  border-radius: 10px;
+  margin: 3px;
+}
+.policy > p {
+  font-size: 14px;
+}
+
+
+
+
+.mazuka-footer {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  background-color: #282828;
+  color: #fff;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.office {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+
+.office-header {
+  color: yellow;
+}
+
+.office > div > p {
+  max-width: 40%;
+  font-size: 13px;
+}
+
+.contact > p {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+}
+
+@media screen and (max-width:600px) {
+  .mazuka-header {
+    flex-direction: column;
+    max-width: fit-content;
+  }
+  
+  .carousal {
+   width: 100%;
+   max-width: 80%;
+   display: flex;
+  flex-direction: column-reverse;
+   padding-bottom: 10px;
+  }
+
+    .carousal-content {
+      width: 90% !important;
+      max-width: 50% !important;
+      margin-top: 10px;
+      align-self: baseline;
+      margin-left: 5px !important;
+    }
+
+  .description {
+    max-width: 48%;
+   margin-bottom: 1px;
+  }
+
+  .ourservice-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    max-width: 98%;
+    padding: 20px;
+  }
+
+    .ourservices>h2 {
+      text-align: left;
+      font-size: 25px;
+      padding-left: 30px;
+      font-size: 20px;
+    }
+  .experience-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+  }
+
+     .experience {
+       max-width: 95%;
+     }
+  
+     .experience>h2 {
+       text-align: left;
+       margin-left: 50px;
+     }
+  
+     .experience>p {
+       max-width: 40%;
+       text-align: left;
+     }
+  
+     .clients {
+       width: 45%;
+     }
+  
+     .policy {
+       max-width: 35%;
+       align-self: baseline;
+       text-align: justify;
+       padding: 10px;
+     }
+
+  .mazuka-footer {
+   display: flex;
+   flex-direction: column;
+   align-self: baseline;
+  padding-bottom: 50px;
+  padding-left: 20px;
+  }
+
+  .office {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact {
+    max-width: 80%;
+    align-self:baseline;
+  }
+} 
