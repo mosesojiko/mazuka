@@ -97,7 +97,8 @@ img {
 .caro-div>p {
   font-size: 20px;
   font-weight: bold;
-  background-color: #00688b;
+  /* background-color: #00688b; */
+  background-color: black;
   color: #fff;
   padding: 5px;
   border-radius: 10px;
@@ -112,7 +113,8 @@ img {
 }
 
 .ourservices > h2 {
-  background-color: #00688b;
+  background-color: black;
+  /* background-color: #00688b; */
   color: #fff;
   padding: 10px;
   margin-top: 0;
@@ -221,6 +223,146 @@ img {
   font-size: 13px;
 }
 
+/* from catering page */
+
+.catering {
+  width: 100%;
+  background-color: black;
+  padding-bottom: 50px;
+  margin-top: -19px;
+}
+
+.catering>h2 {
+  padding-top: 50px;
+  text-shadow: 2px 2px #FF0000;
+}
+
+
+.catering-item {
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  max-width: 95%;
+}
+
+.catering-image-container {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.catering-image-container>div>img {
+  width: 250px;
+  height: auto;
+  border-radius: 20px;
+}
+
+.take-action {
+  display: flex;
+  justify-content: space-around;
+  background-color: black !important;
+  /* background-color: #104eab; */
+  margin-bottom: -10px;
+  width: 100% !important;
+  max-width: 94% !important;
+  padding-bottom: 50px;
+}
+
+.take-action>div {
+  margin: 10px;
+}
+
+
+.housekeeping-header-div {
+  padding: 20px;
+}
+
+.housekeeping-header {
+  text-align: center;
+  width: 100%;
+  max-width: 95%;
+}
+
+
+.housekeeping {
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+  margin-bottom: -10px;
+  width: 100%;
+  max-width: 100%;
+  padding-bottom: 30px;
+}
+
+.housekeeping>div {
+  margin: 10px;
+}
+
+
+
+
+
+.calculating {
+  display: flex;
+}
+
+.calculating>img {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.call-to-action {
+  text-align: left;
+  padding: 20px;
+  max-width: 90%;
+}
+
+.call-to-action>p {
+  font-size: 25px;
+  color: blue;
+  max-width: 90%;
+  font-weight: bold;
+}
+
+
+@media screen and (max-width:600px) {
+  .catering-item {
+    padding: 5px;
+    max-width: 37%;
+  }
+
+  .catering-image-container {
+    width: 100%;
+    padding: 5px;
+    padding-left: 7px;
+  }
+
+  .catering-image-container>div>img {
+    width: 80px;
+  }
+
+  .take-action {
+    display: flex;
+    flex-direction: column;
+  }
+
+    .housekeeping-header {
+      padding: 5px !important;
+      max-width: 38% !important;
+    }
+  .housekeeping {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+
+/* end catering page */
+
 @media screen and (max-width:600px) {
   .mazuka-header {
     flex-direction: column;
@@ -246,6 +388,7 @@ img {
   .description {
     max-width: 48%;
    margin-bottom: 1px;
+   margin-left: 1px;
   }
 
   .ourservice-container {
@@ -259,8 +402,7 @@ img {
     .ourservices>h2 {
       text-align: left;
       font-size: 25px;
-      padding-left: 30px;
-      font-size: 20px;
+      padding-left: 100px;
     }
   .experience-container {
     display: flex;
@@ -291,6 +433,12 @@ img {
        align-self: baseline;
        text-align: justify;
        padding: 10px;
+     }
+
+     .call-to-action > p{
+      width: 40%;
+     font-size: 20px;
+     max-width: 70%;
      }
 
   .mazuka-footer {

@@ -1,21 +1,21 @@
-.catering {
+/* .catering-container {
     width: 100%;
     background-color: black;
     padding-bottom: 50px;
 }
 
-.catering > h2 {
+.catering-container > h2 {
     padding-top: 50px;
     text-shadow: 2px 2px #FF0000;
 }
 
 
-.catering-item {
+.catering-item-container {
     color: #fff;
     text-align: center;
 }
 
-.catering-image-container {
+.catering-container-image {
     max-width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -24,7 +24,7 @@
     justify-content: space-evenly;
 }
 
-.catering-image-container > div > img {
+.catering-container-image > div > img {
     width: 250px;
     height: auto;
     border-radius: 20px;
@@ -86,7 +86,7 @@
     padding: 20px;
 }
 
-.call-to-action > p {
+.call-to-action>p {
     font-size: 25px;
     color: blue;
     max-width: 95%;
@@ -94,7 +94,7 @@
 
 
 @media screen and (max-width:600px) {
-    .catering-item {
+    .catering-item-container {
         padding: 5px;
     }
     .catering-image-container {
@@ -114,4 +114,4 @@
              display: flex;
              flex-direction: column;
          }
-}
+} */
