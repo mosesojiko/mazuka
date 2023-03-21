@@ -84,6 +84,11 @@ img {
   width: 100%;
 }
 
+img:hover {
+  scale: 1.1;
+  transition: 1s ease-in;
+}
+
 .caro-div {
   max-height: 499 !important;
   max-width: 400px;
@@ -188,6 +193,13 @@ img {
   font-size: 14px;
 }
 
+.topArrow {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: green;
+  font-weight: bold;
+}
 
 
 
@@ -283,7 +295,7 @@ img {
 .housekeeping-header {
   text-align: center;
   width: 100%;
-  max-width: 95%;
+  max-width: 100%;
 }
 
 
@@ -293,7 +305,7 @@ img {
   background-color: #fff;
   margin-bottom: -10px;
   width: 100%;
-  max-width: 100%;
+  max-width: 93%;
   padding-bottom: 30px;
 }
 
@@ -386,6 +398,7 @@ img {
     }
 
   .description {
+    background-color: black;
     max-width: 48%;
    margin-bottom: 1px;
    margin-left: 1px;

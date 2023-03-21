@@ -3,6 +3,8 @@ import React from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 import { Link } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link';
+import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 
 
 import Card from '@mui/material/Card';
@@ -19,7 +21,7 @@ import background from '../photos/special-background4.jpg';
 function Home() {
     
   return (
-    <div style={{maxWidth:"100%"}}>
+    <div style={{maxWidth:"100%"}} id="top">
         
             <div className='carousal' style={{ backgroundImage: `url(${background})`,backgroundRepeat:"repeat" }}>
                 <div className='description'>
@@ -28,51 +30,51 @@ function Home() {
             <div className="carousal-content">
                 <Carousel infiniteLoop useKeyboardArrows autoPlay>
             
-            <Link to="/catering" style={{textDecoration:"none"}}>
+            <HashLink smooth to="/#catering" style={{textDecoration:"none"}}>
               <div className='caro-div'>
                     <img src="/images/catering-y1.jpeg" alt=""/>
                     
                     <p>Catering Services</p>
                 </div>
-            </Link>
-             <Link to="/catering" style={{textDecoration:"none"}}>
+            </HashLink>
+             <HashLink smooth to="/#catering" style={{textDecoration:"none"}}>
                 <div className='caro-div'>
                    
                      <img src="/images/catering-y.jpeg" alt=""/>
                     <p>Catering Services</p>
                 </div>
-              </Link>
-               <Link to="#" style={{textDecoration:"none"}}>
+              </HashLink>
+               <HashLink smooth to="/#others" style={{textDecoration:"none"}}>
                 <div className='caro-div'>
                     <img src="/images/houseboat.jpg" alt=""/>
                     <p>House boat leasing/support services</p>
                 </div>
-              </Link>
+              </HashLink>
               
-               <Link to="#" style={{textDecoration:"none"}}>
+               <HashLink smooth to="/#housekeeping" style={{textDecoration:"none"}}>
                 <div className='caro-div'>
                     <img src="/images/laundry.jpg" alt=""/>
                     <p>House keeping Services</p>
                 </div>
-                </Link>
-                <Link to="#" style={{textDecoration:"none"}}>
+                </HashLink>
+                <HashLink smooth to="/#others" style={{textDecoration:"none"}}>
                 <div className='caro-div'>
                     <img src="/images/mazuka-ago.jpg" alt=""/>
                     <p>Ago supplies</p>
                 </div>
-                </Link>
-                <Link to="#" style={{textDecoration:"none"}}>
+                </HashLink>
+                <HashLink smooth to="/#others" style={{textDecoration:"none"}}>
                 <div className='caro-div'>
                     <img src="/images/marine-consumables.jpg" alt=""/>
                     <p>Marine consumable</p>
                 </div>
-                </Link>
-                <Link to="/catering" style={{textDecoration:"none"}}>
+                </HashLink>
+                <HashLink smooth to="/#catering" style={{textDecoration:"none"}}>
                 <div className='caro-div'>
                       <img src="/images/catering-y2.jpeg" alt=""/>
                     <p>Catering Services</p>
                 </div>
-                </Link>
+                </HashLink>
                 
             </Carousel>
             </div>
@@ -81,7 +83,7 @@ function Home() {
         </div>
 
         {/* start of catering service */}
-        <div className='catering'>
+        <div className='catering' id="catering">
             <h2 className='catering-item'>Mazuka Catering Service</h2>
         <p className='catering-item'>Do not worry about food for your team. Mazuka is here for you.</p>
         
@@ -155,7 +157,7 @@ function Home() {
 
         {/* house keeping section */}
        
-        <div className='housekeeping-header-div'>
+        <div className='housekeeping-header-div' id="housekeeping">
           <h3 className='housekeeping-header'>Mazuka housekeeping services</h3>
           <p className='housekeeping-header'>Alongside our catering service, we also provide housekeeping service.</p>
         </div>
@@ -225,7 +227,7 @@ function Home() {
 
         {/* end of houskeeping */}
         
-          <div className='ourservices'>
+          <div className='ourservices' id="others">
             <h2>Other services</h2>
             <div className='ourservice-container'>
                 {/* <div className='ourservice-div'> */}
@@ -411,6 +413,7 @@ function Home() {
         </div> 
          <div className='call-to-action'>
           <p>For more enquiries, Visit our office, call or send us a mail using the contact details below</p>
+          <HashLink smooth to ="/#top" className='topArrow'><span>Top</span> <ArrowUpwardIcon/></HashLink>
         </div>
         
     </div>
