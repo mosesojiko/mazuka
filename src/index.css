@@ -247,6 +247,7 @@ img:hover {
 .catering>h2 {
   padding-top: 50px;
   text-shadow: 2px 2px #FF0000;
+  font-size: 25px;
 }
 
 
@@ -379,6 +380,7 @@ img:hover {
   .mazuka-header {
     flex-direction: column;
     max-width: fit-content;
+    padding-left: 15px;
   }
   
   .carousal {
