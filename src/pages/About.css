@@ -1,0 +1,25 @@
+.about-us {
+    display: flex;
+    justify-content: space-around;
+}
+
+.about-us >div >h2, p {
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.about-img {
+    display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        border-radius: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .about-us {
+        display: flex;
+        flex-direction: column;
+    }
+}

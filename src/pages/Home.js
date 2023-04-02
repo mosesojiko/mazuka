@@ -16,9 +16,42 @@ import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 import background from '../photos/special-background4.jpg';
 //import background2 from '../photos/special-background3.jpg'
+import {useState} from 'react'
+import {send} from 'emailjs-com'
 
 
 function Home() {
+  const [toSend, setToSend] = useState({
+    first_name: "",
+    last_name: "",
+    message: "",
+    reply_to: ""
+  })
+
+  const handleChange = (e) =>{
+    setToSend({...toSend, [e.target.name]: e.target.value})
+  }
+  const onSubmit= (e) => {
+    e.preventDefault()
+    send(
+      "service_yz0b8je",
+      "template_gegwjx8",
+      toSend,
+      "H8-jRHAbq0AO9pdM2"
+    )
+    .then((response) =>{
+      console.log("SUCCESS!", response.status, response.text);
+      setToSend({
+        first_name: "",
+    last_name: "",
+    message: "",
+    reply_to: ""
+      })
+    })
+    .catch((err) => {
+      console.log("FAILED...", err)
+    })
+  }
     
   return (
     <div style={{maxWidth:"100%"}} id="top">
@@ -99,11 +132,11 @@ function Home() {
         height="140"
         image="/images/catering/offshore2.jpg"
       />
-      <CardContent>
+      <CardContent className='content'>
         <Typography gutterBottom variant="h5" component="div" sx={{textAlign:"center"}}>
           Onshore and Offshore
         </Typography>
-        <Typography variant="body2" color="text.secondary" sx={{fontSize:"14px", color:"#4a4a4a", textAlign:"justify"}}>
+        <Typography className='typography-content' variant="body2" color="text.secondary" sx={{fontSize:"14px", color:"#4a4a4a", textAlign:"justify"}}>
           We cater for your workers both onshore and offshore.
         </Typography>
         
@@ -119,11 +152,11 @@ function Home() {
         height="140"
         image="/images/catering/onshore1.jpg"
       />
-      <CardContent>
+      <CardContent className='content'>
         <Typography gutterBottom variant="h5" component="div" sx={{textAlign:"center"}}>
           People on Board (POBs)
         </Typography>
-        <Typography variant="body2" color="text.secondary" sx={{fontSize:"14px", color:"#4a4a4a", textAlign:"justify"}}>
+        <Typography className='typography-content' variant="body2" color="text.secondary" sx={{fontSize:"14px", color:"#4a4a4a", textAlign:"justify"}}>
           We provide a flexible catering service that suits the number of workers you have on board. Whether they are 10 people, 100 people, 500 people or 1000 people on board and above, Mazuka will provide their daily food supply.
         </Typography>
         
@@ -138,11 +171,11 @@ function Home() {
         height="140"
         image="/images/catering/offshore1.jpg"
       />
-      <CardContent>
+      <CardContent className='content'>
         <Typography gutterBottom variant="h5" component="div" sx={{textAlign:"center"}}>
           Location
         </Typography>
-        <Typography variant="body2" color="text.secondary" sx={{fontSize:"14px", color:"#4a4a4a", textAlign:"justify"}}>
+        <Typography className='typography-content' variant="body2" color="text.secondary" sx={{fontSize:"14px", color:"#4a4a4a", textAlign:"justify"}}>
           Whether far or near, we are positioned to render services at any project site of our clients.
         </Typography>
         
@@ -172,11 +205,11 @@ function Home() {
         height="140"
         image="/images/housekeeping/housekeeping3.jpg"
       />
-      <CardContent>
+      <CardContent className='content'>
         <Typography gutterBottom variant="h5" component="div" sx={{textAlign:"center"}}>
           House Keeping
         </Typography>
-        <Typography variant="body2" color="text.secondary" sx={{fontSize:"14px", color:"#4a4a4a", textAlign:"justify"}}>
+        <Typography className='typography-content' variant="body2" color="text.secondary" sx={{fontSize:"14px", color:"#4a4a4a", textAlign:"justify"}}>
           Our team is well positioned to cater for both national and expatriate workers to accomodate all shades of nationalities to make them feel at home while at work.
         </Typography>
         
@@ -192,11 +225,11 @@ function Home() {
         height="140"
         image="/images/housekeeping/laundry.jpg"
       />
-      <CardContent>
+      <CardContent className='content'>
         <Typography gutterBottom variant="h5" component="div" sx={{textAlign:"center"}}>
           Clean Home
         </Typography>
-        <Typography variant="body2" color="text.secondary" sx={{fontSize:"14px", color:"#4a4a4a", textAlign:"justify"}}>
+        <Typography className='typography-content' variant="body2" color="text.secondary" sx={{fontSize:"14px", color:"#4a4a4a", textAlign:"justify"}}>
           We always maintain a clean and safe environment.
         </Typography>
         
@@ -211,11 +244,11 @@ function Home() {
         height="140"
         image="/images/housekeeping/satisfaction1.jpg"
       />
-      <CardContent>
+      <CardContent className='content'>
         <Typography gutterBottom variant="h5" component="div" sx={{textAlign:"center"}}>
           Satisfaction
         </Typography>
-        <Typography variant="body2" color="text.secondary" sx={{fontSize:"14px", color:"#4a4a4a", textAlign:"justify"}}>
+        <Typography className='typography-content' variant="body2" color="text.secondary" sx={{fontSize:"14px", color:"#4a4a4a", textAlign:"justify"}}>
           We place premium interest in customers' satisfaction. Hence, we vigorously work with this in view.
         </Typography>
         
@@ -297,11 +330,11 @@ function Home() {
           alt=""
         />
         </Link>
-        <CardContent>
+        <CardContent className='content'>
           <Typography gutterBottom variant="h5" component="div" sx={{textAlign:"center"}}>
            Chandelling
           </Typography>
-          <Typography variant="body2" color="text.secondary" sx={{fontSize:"14px", color:"#4a4a4a", textAlign:"justify"}}>
+          <Typography className='typography-content' variant="body2" color="text.secondary" sx={{fontSize:"14px", color:"#4a4a4a", textAlign:"justify"}}>
            Our clients expressed satisfaction with our services including but not limited to Wrightlinks Logistic Service Limited, Ocean Marine and Tankers Nigeria Limited, Dreging International Service (Nig,) and World Carrier Corporation. 
 
           </Typography>
@@ -327,11 +360,11 @@ function Home() {
           alt=""
         />
         </Link>
-        <CardContent>
+        <CardContent className='content'>
           <Typography gutterBottom variant="h5" component="div" sx={{textAlign:"center"}}>
            Marine Support Service
           </Typography>
-          <Typography variant="body2" color="text.secondary" sx={{fontSize:"14px", color:"#4a4a4a", textAlign:"justify"}}>
+          <Typography className='typography-content' variant="body2" color="text.secondary" sx={{fontSize:"14px", color:"#4a4a4a", textAlign:"justify"}}>
             On request, we source and lease to our clients House boats, Sport barge, security boats etc
           </Typography>
           {/* <Link to ="#" style={{textDecoration:"none"}}>
@@ -354,11 +387,11 @@ function Home() {
         image="/images/mazuka-ago.jpg"
       />
       </Link>
-      <CardContent>
+      <CardContent className='content'>
         <Typography gutterBottom variant="h5" component="div" sx={{textAlign:"center"}}>
           AGO (Diesel) supply
         </Typography>
-        <Typography variant="body2" color="text.secondary" sx={{fontSize:"14px", color:"#4a4a4a", textAlign:"justify"}}>
+        <Typography className='typography-content' variant="body2" color="text.secondary" sx={{fontSize:"14px", color:"#4a4a4a", textAlign:"justify"}}>
           We supply AGO to our numerous clients whenever they are needed.
         </Typography>
         {/* <Link to ="#" style={{textDecoration:"none"}}>
@@ -411,6 +444,41 @@ function Home() {
             
         </div>
         </div> 
+        {/* contact form */}
+        <div className='form-container' id="contact">
+          <h2 style={{textAlign:"center",color:"white"}}>Contact Us</h2>
+          <form onSubmit={onSubmit}>
+            <label htmlFor="first_name">First Name</label>
+    <input type="text" id="first_name" name="first_name" placeholder="Your first name" required
+    value={toSend.first_name}
+    onChange={handleChange}
+    ></input>
+
+    <label htmlFor="last_name">Last Name</label>
+    <input type="text" id="last_name" name="last_name" placeholder="Your last name" required
+    value={toSend.last_name}
+    onChange={handleChange}
+    ></input>
+
+    <label htmlFor="email">Email</label>
+<input type="text" name="reply_to" placeholder="Your email" required
+    value={toSend.reply_to}
+    onChange={handleChange}
+    ></input>
+
+    <label htmlFor="message">Message</label>
+    <textarea id="message" name="message" placeholder="Type your message.." style={{height:"200px"}} required
+    value={toSend.message}
+    onChange={handleChange}
+    ></textarea>
+    
+
+
+     <input type="submit" value="Submit"></input>
+          </form>
+        </div>
+        
+        {/* end of contact form */}
          <div className='call-to-action'>
           <p>For more enquiries, Visit our office, call or send us a mail using the contact details below</p>
           <HashLink smooth to ="/#top" className='topArrow'><span>Top</span> <ArrowUpwardIcon/></HashLink>
