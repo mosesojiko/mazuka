@@ -48,6 +48,7 @@ footer {
   justify-content: space-around;
   align-items: center;
   padding: 5px;
+  max-width: 95%;
 }
 
 .mazuka-header-links {
@@ -148,6 +149,7 @@ img:hover {
   /* background-color: #00688b; */
   color: #fff;
   padding: 10px;
+  padding-bottom: 50px;
   margin-top: 0;
   margin-bottom: 0;
   text-align: center;
@@ -409,9 +411,10 @@ img:hover {
   color: white;
   /* background-color: #f2f2f2; */
   padding: 20px;
-  width: 90%;
+  width: 100%;
 }
 .form-container > form {
+  width: 90%;
   margin-left: 5px;
 }
 

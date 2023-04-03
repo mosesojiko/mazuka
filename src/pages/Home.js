@@ -18,9 +18,13 @@ import background from '../photos/special-background4.jpg';
 //import background2 from '../photos/special-background3.jpg'
 import {useState} from 'react'
 import {send} from 'emailjs-com'
+import Stack from '@mui/material/Stack';
+import Alert from '@mui/material/Alert';
 
 
 function Home() {
+  const [successMessage, setSuccessMessage] = useState(false);
+  const [error, setError] = useState(false)
   const [toSend, setToSend] = useState({
     first_name: "",
     last_name: "",
@@ -47,9 +51,11 @@ function Home() {
     message: "",
     reply_to: ""
       })
+      setSuccessMessage(true)
     })
     .catch((err) => {
       console.log("FAILED...", err)
+      setError(true)
     })
   }
     
@@ -473,8 +479,20 @@ function Home() {
     ></textarea>
     
 
+    {
+      successMessage && <Stack sx={{ width: '90%' }} spacing={2}>
+      <Alert severity="success" onClose={() => setSuccessMessage(false)}>Your message has been sent successfully.</Alert>
 
+  </Stack>
+     }
+     {
+            error && <Stack sx={{ width: '90%' }} spacing={2}>
+              <Alert severity="error" onClose={() => setError(false)}>Error sending message. Please, use the contact details below.</Alert>
+      
+            </Stack>
+                }
      <input type="submit" value="Submit"></input>
+     
           </form>
         </div>
         
