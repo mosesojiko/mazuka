@@ -19,8 +19,8 @@ function App() {
         <div style={{fontSize:"25px", fontWeight:1000, color:"#191970"}}>MAZUKA NIGERIA LIMITED</div>
         <div className='mazuka-header-links'>
           <HashLink smooth to="#contact">Contact-Us</HashLink>
-          <Link to="/about">About</Link>
-          <Link to="https://accounts.zoho.com/signin?servicename=VirtualOffice&signupurl=https://www.zoho.com/mail/zohomail-pricing.html&serviceurl=https://mail.zoho.com"><img style={{width:"20px", height:"20px"}} src="/images/mazuka-mail.jpg" alt="" /></Link>
+          <Link to="/about" style={{marginRight:"5px"}}>About</Link>
+          <Link to="https://accounts.zoho.com/signin?servicename=VirtualOffice&signupurl=https://www.zoho.com/mail/zohomail-pricing.html&serviceurl=https://mail.zoho.com" target="_blank"><img style={{width:"20px", height:"20px"}} src="/images/mazuka-mail.jpg" alt="" /></Link>
         </div>
         </div>
       </header>
