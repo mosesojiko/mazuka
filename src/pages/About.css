@@ -38,6 +38,15 @@
     color: #306eff !important;
     font-size: 20px !important;
 }
+
+.form-container-about {
+    width: 100% !important
+}
+
+.form-container-about > form {
+    max-width: 90%;
+}
+
 @media screen and (max-width: 600px) {
     .about-us {
         display: flex;

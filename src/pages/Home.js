@@ -23,6 +23,7 @@ import Alert from '@mui/material/Alert';
 
 
 function Home() {
+  const [loading, setLoading] = useState(false)
   const [successMessage, setSuccessMessage] = useState(false);
   const [error, setError] = useState(false)
   const [toSend, setToSend] = useState({
@@ -37,6 +38,7 @@ function Home() {
   }
   const onSubmit= (e) => {
     e.preventDefault()
+    setLoading(true)
     send(
       "service_yz0b8je",
       "template_gegwjx8",
@@ -51,10 +53,12 @@ function Home() {
     message: "",
     reply_to: ""
       })
+      setLoading(false)
       setSuccessMessage(true)
     })
     .catch((err) => {
       console.log("FAILED...", err)
+      setLoading(false)
       setError(true)
     })
   }
@@ -491,7 +495,7 @@ function Home() {
       
             </Stack>
                 }
-     <input type="submit" value="Submit"></input>
+     <input type="submit" value="Submit"></input> {loading && <img style={{width:"50px", marginLeft:"10px"}} src="/images/loaders/gif3.gif" alt="" />}
      
           </form>
         </div>
