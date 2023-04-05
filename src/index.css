@@ -231,7 +231,7 @@ img:hover {
 
 
 
-.mazuka-footer {
+/* .mazuka-footer {
   width: 100%;
   display: flex;
   align-items: flex-start;
@@ -261,7 +261,7 @@ img:hover {
   display: flex;
   align-items: center;
   font-size: 13px;
-}
+} */
 
 /* from catering page */
 
@@ -410,8 +410,9 @@ img:hover {
   background-color: #282828;
   color: white;
   /* background-color: #f2f2f2; */
-  padding: 20px;
+  padding: 10px;
   width: 100%;
+  margin-top: 20px;
 }
 .form-container > form {
   width: 90%;
@@ -447,7 +448,10 @@ input[type=submit]:hover {
 
 @media screen and (max-width: 600px) {
   .form-container {
-      width: 35%;
+      width: 40%;
+    }
+    .form-container > form {
+      width: 90%;
     }
 }
 
@@ -533,7 +537,7 @@ input[type=submit]:hover {
      max-width: 70%;
      }
 
-  .mazuka-footer {
+  /* .mazuka-footer {
    display: flex;
    flex-direction: column;
    align-self: baseline;
@@ -550,5 +554,60 @@ input[type=submit]:hover {
   .contact {
     max-width: 80%;
     align-self:baseline;
-  }
+  } */
+
 } 
+
+.mazuka-footer {
+  padding: 20px;
+  background-color: #4a4a4a;
+  color:#fff
+}
+
+.mazuka-footer-item {
+  display: flex;
+  justify-content: space-between;
+  max-width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.mazuka-footer-item > div {
+  justify-self: left;
+  align-self: baseline;
+  max-width: 25%;
+  margin-bottom: 50px;
+}
+
+.mazuka-footer-item > div > h4 {
+  color: yellow;
+}
+
+.mazuka-footer-contact >p {
+  display: flex;
+}
+
+.personnel-name {
+  color:#00ffff;
+} 
+.personnel-position {
+  color: #00ff00;
+}
+
+@media screen and (max-width: 600px) {
+  .mazuka-footer {
+    padding: 10px;
+  }
+  .mazuka-footer-item {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    padding: 10px;
+  }
+  .mazuka-footer-item > div {
+    max-width: 90%;
+  }
+  .office-p {
+    max-width: 60%;
+  }
+}
