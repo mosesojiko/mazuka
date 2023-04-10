@@ -58,7 +58,7 @@ function Home() {
         
             <div className='carousal' style={{ backgroundImage: `url(${background})`,backgroundRepeat:"repeat" }}>
                 <div className='description'>
-                <p>Mazuka Nigeria Limited is a Catering and Housekeeping company registered in Nigeria. Mazuka is also a leading support service company offering a broad range of services particularly marine logistics, chandelling, material sourcing, and procurement on request as well as supply of AGO and other marine equipment and consummables.</p>
+                <p>Mazuka is a Catering and Housekeeping company registered in Nigeria. Mazuka is also a leading support service company offering a broad range of services particularly marine logistics, chandelling, material sourcing, and procurement on request as well as supply of AGO and other marine equipment and consummables.</p>
             </div>
             <div className="carousal-content">
                 <Carousel infiniteLoop useKeyboardArrows autoPlay>
