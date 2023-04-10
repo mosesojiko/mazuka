@@ -3,7 +3,7 @@
     justify-content: space-around;
 }
 
-.about-us >div >h2, p {
+.about-us-h2-p {
     color: white;
     text-align: center;
     padding: 10px;
@@ -17,9 +17,46 @@
         border-radius: 10px;
 }
 
+.about-description {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.about-description > h2 {
+    text-align: center;
+    color: #2b547e;
+}
+
+.about-description > p {
+    text-align: justify;
+    font-size: 18px;
+    color: #837e7c;
+    font-weight: bold;
+}
+
+.about-contact  {
+    color: #306eff !important;
+    font-size: 20px !important;
+}
+
+.form-container-about {
+    width: 100% !important
+}
+
+.form-container-about > form {
+    max-width: 90%;
+}
+
 @media screen and (max-width: 600px) {
     .about-us {
         display: flex;
         flex-direction: column;
+    }
+
+    .about-description {
+        width: 80%;
+    }
+    .about-description > p {
+        font-size: 15px;
     }
 }

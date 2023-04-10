@@ -18,9 +18,14 @@ import background from '../photos/special-background4.jpg';
 //import background2 from '../photos/special-background3.jpg'
 import {useState} from 'react'
 import {send} from 'emailjs-com'
+import Stack from '@mui/material/Stack';
+import Alert from '@mui/material/Alert';
 
 
 function Home() {
+  const [loading, setLoading] = useState(false)
+  const [successMessage, setSuccessMessage] = useState(false);
+  const [error, setError] = useState(false)
   const [toSend, setToSend] = useState({
     first_name: "",
     last_name: "",
@@ -33,6 +38,7 @@ function Home() {
   }
   const onSubmit= (e) => {
     e.preventDefault()
+    setLoading(true)
     send(
       "service_yz0b8je",
       "template_gegwjx8",
@@ -47,9 +53,13 @@ function Home() {
     message: "",
     reply_to: ""
       })
+      setLoading(false)
+      setSuccessMessage(true)
     })
     .catch((err) => {
       console.log("FAILED...", err)
+      setLoading(false)
+      setError(true)
     })
   }
     
@@ -473,8 +483,20 @@ function Home() {
     ></textarea>
     
 
+    {
+      successMessage && <Stack sx={{ width: '90%' }} spacing={2}>
+      <Alert severity="success" onClose={() => setSuccessMessage(false)}>Your message has been sent successfully.</Alert>
 
-     <input type="submit" value="Submit"></input>
+  </Stack>
+     }
+     {
+            error && <Stack sx={{ width: '90%' }} spacing={2}>
+              <Alert severity="error" onClose={() => setError(false)}>Error sending message. Please, use the contact details below.</Alert>
+      
+            </Stack>
+                }
+     <input type="submit" value="Submit"></input> {loading && <img style={{width:"50px", marginLeft:"10px"}} src="/images/loaders/gif3.gif" alt="" />}
+     
           </form>
         </div>
         
