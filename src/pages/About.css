@@ -44,7 +44,7 @@
 }
 
 .form-container-about > form {
-    max-width: 90%;
+    max-width: 95%;
 }
 
 @media screen and (max-width: 600px) {

@@ -16,7 +16,7 @@ function App() {
       <header>
         <div className='mazuka-header'>
         <div><img style={{width:"80px", height:"80px", borderRadius:"10px"}} src="/images/logo3.jpg" alt="" /></div>          
-        <div style={{fontSize:"25px", fontWeight:1000, color:"#191970"}}>MAZUKA NIGERIA LIMITED</div>
+        <div className='mazuka-header-name'>MAZUKA NIGERIA LIMITED</div>
         <div className='mazuka-header-links'>
           <HashLink smooth to="#contact">Contact-Us</HashLink>
           <Link to="/about" style={{marginRight:"5px"}}>About</Link>
