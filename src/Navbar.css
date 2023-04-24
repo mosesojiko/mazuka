@@ -1,0 +1,43 @@
+.mazuka-navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.mazuka-navbar-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mazuka-navbar-menu > div {
+    margin: 15px
+}
+.mazuka-header-naming {
+    font-size: 20px;
+    font-weight: bold;
+    color: #191970
+}
+.hide {
+    display: none;
+}
+.show {
+    display:block;
+}
+
+@media screen and (max-width: 600px){
+    .mazuka-navbar{
+        display: flex;
+        flex-direction: column;
+    }
+    .mazuka-navbar-menu {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    .hide {
+        display: block;
+    }
+    .show {
+        display: none;
+    }
+}

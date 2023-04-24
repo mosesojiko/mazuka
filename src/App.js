@@ -7,6 +7,10 @@ import Catering from './pages/Catering';
 import { Link } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link';
 import About from './pages/About';
+//import Navbar from './Navbar';
+
+
+
 
 
 function App() {
@@ -24,6 +28,7 @@ function App() {
         </div>
         </div>
       </header>
+      {/* <Navbar/> */}
       <main>
          <Routes>
           <Route path="/about"  element={<About />}></Route>

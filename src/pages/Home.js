@@ -420,7 +420,7 @@ function Home() {
         {/* experience will come in here */}
         <div className='experience-container'>
             <div className='experience'>
-            <h2>Our Experince</h2>
+            <h2>Our Experience</h2>
             <p>We have gained vast and unquantifiable experience in the industry. We are still in the business of satisfying our clients. Some of our clients include:</p>
             <div className='clients'>
                 <div>
