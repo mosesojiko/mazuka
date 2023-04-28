@@ -39,13 +39,7 @@
     font-size: 20px !important;
 }
 
-.form-container-about {
-    width: 100% !important
-}
 
-.form-container-about > form {
-    max-width: 95%;
-}
 
 @media screen and (max-width: 600px) {
     .about-us {
