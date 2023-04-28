@@ -16,7 +16,27 @@
 .mazuka-header-naming {
     font-size: 20px;
     font-weight: bold;
-    color: #191970
+    color:#00688b
+}
+.mazuka-header-links > a {
+    text-decoration: none;
+  color: #009acd;
+  margin: 5px;
+  font-size: 20px;
+}
+.navbar-link > a {
+    text-decoration: none;
+    color: #009acd;
+    margin: 5px;
+    font-size: 20px;
+}
+.mazuka-header-links > a:hover {
+    color:blue;
+  transition: 1s ease-out;
+}
+.navbar-link > a:hover {
+    color:#00688b;
+    transition: 1s ease-out;
 }
 .hide {
     display: none;
@@ -33,6 +53,9 @@
     .mazuka-navbar-menu {
         margin-bottom: 0;
         padding-bottom: 0;
+    }
+    .mazuka-header-naming {
+        font-size: 15px;
     }
     .hide {
         display: block;

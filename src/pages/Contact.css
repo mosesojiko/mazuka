@@ -1,0 +1,107 @@
+/* form styling */
+.form-container {
+    border-radius: 5px;
+    padding: 10px;
+    width: 50%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .form-container > form {
+    max-width: 96%;
+    margin-left: 5px;
+    border: 2px solid #00bfff;
+    border-radius: 10px;
+    padding: 10px
+  }
+
+  .form-container > form > h2 {
+    color: #0892d0;
+  }
+  .form-container > form >h2,p {
+    text-align: center;
+  }
+  
+  
+  input[type=text],
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #0f52ba;
+    text-align: center;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #007fff;
+  }
+
+  .talk-to-staff {
+    color: #1e90ff;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .mazuka-contact-persons {
+    display: flex;
+    justify-content: space-between;
+    max-width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+  }
+
+  .mazuka-contact-persons > div > p {
+    text-align: left;
+  }
+  
+  .personnel-name {
+    color:#000133;
+    font-weight: bold;
+  } 
+  .personnel-position {
+    color: #603fef;
+  }
+  .contact-details {
+    display: flex;
+    align-items: center;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .form-container {
+        width: 100%;
+      }
+      .form-container > form {
+        width: 90%;
+      }
+      .talk-to-staff {
+        padding: 10px;
+        margin: 10px;
+      }
+      .mazuka-contact-persons {
+        display: block;
+        padding: 5px;
+        max-width: 60%;
+      }
+      .mazuka-contact-persons > div {
+        padding: 15px 0;
+      }
+  }
+  
+  /* end of form styling */
