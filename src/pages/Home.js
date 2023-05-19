@@ -126,7 +126,7 @@ function Home() {
           People on Board (POBs)
         </Typography>
         <Typography className='typography-content' variant="body2" color="text.secondary" sx={{fontSize:"14px", color:"#4a4a4a", textAlign:"justify"}}>
-          We provide a flexible catering service that suits the number of workers you have on board. Whether they are 10 people, 100 people, 500 people or 1000 people on board and above, Mazuka will provide their daily food supply.
+          We provide a flexible catering services that suit the number of workers you have on board. Whether they are 100 personnel, 1000 personnel or above, Mazuka will provide their daily food supply.
         </Typography>
         
       </CardContent>
@@ -334,7 +334,7 @@ function Home() {
            Marine Support Service
           </Typography>
           <Typography className='typography-content' variant="body2" color="text.secondary" sx={{fontSize:"14px", color:"#4a4a4a", textAlign:"justify"}}>
-            On request, we source and lease to our clients House boats, Sport barge, security boats etc
+            On request, we source and lease to our clients House boats, Sport barges, security boats etc
           </Typography>
           {/* <Link to ="#" style={{textDecoration:"none"}}>
             <Button variant='contained' color="primary" size="small" style={{marginTop:'5px', marginLeft:"60px"}}>Learn More</Button>

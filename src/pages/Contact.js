@@ -136,14 +136,14 @@ function Contact() {
               <p className='contact-details'><span><EmailIcon/></span> <span style={{marginLeft:"5px"}}>oghenemaro@mazukaltd.com</span></p>
             </div>
             <div>
-            <p className='personnel-name'>Dean. Ugoh Cyriacus</p>
+            <p className='personnel-name'>Dcn. Ugoh Cyriacus</p>
               <p className='personnel-position'>Managing Director</p>
-              <p className='contact-details'><span><CallIcon/></span> <span style={{marginLeft:"5px"}}>+2349020182372</span></p>
+              <p className='contact-details'><span><CallIcon/></span> <span style={{marginLeft:"5px"}}>+2348035665919</span></p>
               <p className='contact-details'><span><EmailIcon/></span> <span style={{marginLeft:"5px"}}>cyriacus@mazukaltd.com</span></p>
             </div>
             <div>
             <p className='personnel-name'>Mrs. Atim Uzor</p>
-              <p className='personnel-position'>Chief Executive Officer (CEO)</p>
+              <p className='personnel-position'>Chairman/CEO</p>
               <p className='contact-details'><span><CallIcon/></span> <span style={{marginLeft:"5px"}}>+2348065710202</span></p>
               <p className='contact-details'><span><EmailIcon/></span> <span style={{marginLeft:"5px"}}>mma@mazukaltd.com</span></p>
             </div>

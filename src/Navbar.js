@@ -29,6 +29,7 @@ function Navbar() {
             <MenuItem onClick={popupState.close} className='navbar-link'><Link smooth to="/">Home</Link></MenuItem>
             <MenuItem onClick={popupState.close} className='navbar-link'><Link smooth to="/contact">Contact-Us</Link></MenuItem>
             <MenuItem onClick={popupState.close} className='navbar-link'><Link smooth to="/about">About</Link></MenuItem>
+            <MenuItem onClick={popupState.close} className='navbar-link'><Link to="https://accounts.zoho.com/signin?servicename=VirtualOffice&signupurl=https://www.zoho.com/mail/zohomail-pricing.html&serviceurl=https://mail.zoho.com" target="_blank"><img style={{width:"20px", height:"14px"}} src="/images/mazuka-mail.jpg" alt="" /></Link></MenuItem>
           </Menu>
         </React.Fragment>
       )}
