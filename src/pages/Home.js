@@ -19,7 +19,6 @@ import background from '../photos/special-background4.jpg';
 
 
 
-
 function Home() {
   
   return (
@@ -34,24 +33,27 @@ function Home() {
             
             <HashLink smooth to="/#catering" style={{textDecoration:"none"}}>
               <div className='caro-div'>
-                    <img src="/images/catering-y1.jpeg" alt=""/>
+                    <img src="/images/warehouse1.jpg" alt=""/>
                     
-                    <p>Catering Services</p>
+                    <p>Getting ready for supply</p>
                 </div>
             </HashLink>
              <HashLink smooth to="/#catering" style={{textDecoration:"none"}}>
                 <div className='caro-div'>
-                   
-                     <img src="/images/catering-y.jpeg" alt=""/>
+                     <img src="/images/catering1.jpeg" alt=""/>
+                     
                     <p>Catering Services</p>
                 </div>
               </HashLink>
-               <HashLink smooth to="/#others" style={{textDecoration:"none"}}>
+
+              <HashLink smooth to="/#catering" style={{textDecoration:"none"}}>
                 <div className='caro-div'>
-                    <img src="/images/houseboat.jpg" alt=""/>
-                    <p>House boat leasing/support services</p>
+                <img src="/images/catering-y.jpeg" alt=""/>
+                  
+                    <p>Catering Services</p>
                 </div>
-              </HashLink>
+                </HashLink>
+               
               
                <HashLink smooth to="/#housekeeping" style={{textDecoration:"none"}}>
                 <div className='caro-div'>
@@ -59,6 +61,13 @@ function Home() {
                     <p>House keeping Services</p>
                 </div>
                 </HashLink>
+
+                <HashLink smooth to="/#others" style={{textDecoration:"none"}}>
+                <div className='caro-div'>
+                    <img src="/images/houseboat.jpg" alt=""/>
+                    <p>House boat leasing/support services</p>
+                </div>
+              </HashLink>
                 <HashLink smooth to="/#others" style={{textDecoration:"none"}}>
                 <div className='caro-div'>
                     <img src="/images/mazuka-ago.jpg" alt=""/>
@@ -71,12 +80,7 @@ function Home() {
                     <p>Marine consumable</p>
                 </div>
                 </HashLink>
-                <HashLink smooth to="/#catering" style={{textDecoration:"none"}}>
-                <div className='caro-div'>
-                      <img src="/images/catering-y2.jpeg" alt=""/>
-                    <p>Catering Services</p>
-                </div>
-                </HashLink>
+                
                 
             </Carousel>
             </div>
