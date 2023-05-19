@@ -90,6 +90,10 @@ footer {
   margin: 5px;
   font-weight: bolder;
   border-radius: 10px;
+  text-align: justify;
+}
+.description > p {
+  text-align: justify;
 }
 
 
