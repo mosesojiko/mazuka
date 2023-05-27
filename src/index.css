@@ -545,3 +545,67 @@ img:hover {
     max-width: 95%;
   }
 }
+.profile-header {
+  text-align: center;
+  padding: 15px;
+}
+.profile-container {
+  display: flex;
+  padding: 10px;
+}
+.profile-container > div {
+  width: 50%;
+  padding: 10px;
+}
+.profile {
+  max-width: 80%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.profile-ul {
+  background-color: #2f7ab4;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+}
+
+.profile-ul > li {
+  color: #fff;
+  list-style-type: square;
+  margin: 15px 0;
+  font-size: 20px;
+}
+
+.profile-ul >li:hover {
+  font-weight: bold;
+  margin-right: 5px;
+  transition: 0.5s ease-in;
+}
+
+@media screen and (max-width:600px) {
+  .profile-container {
+      display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+    }
+
+  .profile-container>div {
+      width: 100%;
+      padding: 5px;
+        }
+  .profile {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+      }
+    .profile-ul {
+      padding-right: 3px;
+    }
+
+    .profile-ul>li {
+      margin: 15px 0;
+      font-size: 15px;
+     }
+}

@@ -35,7 +35,7 @@ function Home() {
               <div className='caro-div'>
                     <img src="/images/warehouse1.jpg" alt=""/>
                     
-                    <p>Getting ready for supply</p>
+                    <p>Getting items ready for supply</p>
                 </div>
             </HashLink>
              <HashLink smooth to="/#catering" style={{textDecoration:"none"}}>
@@ -45,20 +45,19 @@ function Home() {
                     <p>Catering Services</p>
                 </div>
               </HashLink>
-
-              <HashLink smooth to="/#catering" style={{textDecoration:"none"}}>
-                <div className='caro-div'>
-                <img src="/images/catering-y.jpeg" alt=""/>
-                  
-                    <p>Catering Services</p>
-                </div>
-                </HashLink>
-               
               
                <HashLink smooth to="/#housekeeping" style={{textDecoration:"none"}}>
                 <div className='caro-div'>
                     <img src="/images/laundry.jpg" alt=""/>
                     <p>House keeping Services</p>
+                </div>
+                </HashLink>
+
+                <HashLink smooth to="/#others" style={{textDecoration:"none"}}>
+                <div className='caro-div'>
+                <img src="/images/jackupbarge.png" alt=""/>
+                  
+                    <p>Equipment Leasing (Marine)</p>
                 </div>
                 </HashLink>
 
@@ -87,6 +86,28 @@ function Home() {
             
             
         </div>
+        {/* adding ourservices*/}
+       
+          <h2 className='profile-header'>Our services</h2>
+          <div className='profile-container'>
+            <div>
+            <img className='profile' src='/images/profile.jpg' alt="" />
+            </div>
+          <div>
+            <ul className='profile-ul'>
+              <li>Catering and Housekeeping</li>
+              <li>Chandelling and Marine Supplies</li>
+              <li>Equipment Leasing (Marine)</li>
+              <li>Marine Consumable Supplies</li>
+              <li>Ago Supplies</li>
+            </ul>
+          </div>
+          </div>
+        
+
+        {/* adding ourservices*/}
+
+
 
         {/* start of catering service */}
         <div className='catering' id="catering">
