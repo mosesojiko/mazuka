@@ -33,14 +33,14 @@ function Home() {
             
             <HashLink smooth to="/#catering" style={{textDecoration:"none"}}>
               <div className='caro-div'>
-                    <img src="/images/warehouse1.jpg" alt=""/>
+                    <img src="/images/warehouse2.jpg" alt=""/>
                     
                     <p>Getting items ready for supply</p>
                 </div>
             </HashLink>
              <HashLink smooth to="/#catering" style={{textDecoration:"none"}}>
                 <div className='caro-div'>
-                     <img src="/images/catering1.jpeg" alt=""/>
+                     <img src="/images/catering-y.jpeg" alt=""/>
                      
                     <p>Catering Services</p>
                 </div>
