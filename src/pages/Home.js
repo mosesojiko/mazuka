@@ -17,14 +17,14 @@ import { CardActionArea } from '@mui/material';
 import background from '../photos/special-background4.jpg';
 //import background2 from '../photos/special-background3.jpg'
 
-
+//style={{ backgroundImage: `url(${background})`,backgroundRepeat:"repeat" }}
 
 function Home() {
   
   return (
     <div style={{maxWidth:"100%"}} id="top">
         
-            <div className='carousal' style={{ backgroundImage: `url(${background})`,backgroundRepeat:"repeat" }}>
+            <div className='carousal'>
                 <div className='description'>
                 <p>Mazuka is a Catering and Housekeeping company registered in Nigeria. Mazuka is also a leading support service company offering a broad range of services particularly marine logistics, chandelling, material sourcing, and procurement on request as well as supply of AGO and other marine equipment and consummables.</p>
             </div>
@@ -33,7 +33,7 @@ function Home() {
             
             <HashLink smooth to="/#catering" style={{textDecoration:"none"}}>
               <div className='caro-div'>
-                    <img src="/images/warehouse2.jpg" alt=""/>
+                    <img src="/images/warehouse3.jpg" alt=""/>
                     
                     <p>Getting items ready for supply</p>
                 </div>
@@ -356,7 +356,7 @@ function Home() {
         </Link>
         <CardContent className='content'>
           <Typography gutterBottom variant="h5" component="div" sx={{textAlign:"center"}}>
-           Marine Support Service
+           Equipment Leasing
           </Typography>
           <Typography className='typography-content' variant="body2" color="text.secondary" sx={{fontSize:"14px", color:"#4a4a4a", textAlign:"justify"}}>
             On request, we source and lease to our clients House boats, Sport barges, security boats etc
