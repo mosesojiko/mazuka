@@ -7,6 +7,7 @@ import CallIcon from '@mui/icons-material/Call';
 import EmailIcon from '@mui/icons-material/Email';
 import './Contact.css'
 
+
 function Contact() {
     const [loading, setLoading] = useState(false)
   const [successMessage, setSuccessMessage] = useState(false);
@@ -47,7 +48,6 @@ function Contact() {
       setError(true)
     })
   }
-    
 
   return (
     <div>
@@ -148,6 +148,7 @@ function Contact() {
               <p className='contact-details'><span><EmailIcon/></span> <span style={{marginLeft:"5px"}}>mma@mazukaltd.com</span></p>
             </div>
           </div>
+          
       
     </div>
   )

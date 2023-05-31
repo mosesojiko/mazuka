@@ -545,3 +545,11 @@ img:hover {
     max-width: 95%;
   }
 }
+
+.partic {
+  position: relative;
+  top:10px;
+  left: 50px;
+  color: white;
+ z-index: 1;
+}

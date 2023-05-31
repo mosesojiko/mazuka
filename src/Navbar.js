@@ -27,6 +27,7 @@ function Navbar() {
           </Button>
           <Menu {...bindMenu(popupState)}>
             <MenuItem onClick={popupState.close} className='navbar-link'><Link smooth to="/">Home</Link></MenuItem>
+            <MenuItem onClick={popupState.close} className='navbar-link'><Link smooth to="/services">Services</Link></MenuItem>
             <MenuItem onClick={popupState.close} className='navbar-link'><Link smooth to="/contact">Contact-Us</Link></MenuItem>
             <MenuItem onClick={popupState.close} className='navbar-link'><Link smooth to="/about">About</Link></MenuItem>
             <MenuItem onClick={popupState.close} className='navbar-link'><Link to="https://accounts.zoho.com/signin?servicename=VirtualOffice&signupurl=https://www.zoho.com/mail/zohomail-pricing.html&serviceurl=https://mail.zoho.com" target="_blank"><img style={{width:"20px", height:"14px"}} src="/images/mazuka-mail.jpg" alt="" /></Link></MenuItem>
@@ -40,6 +41,7 @@ function Navbar() {
         
         <div className='mazuka-header-links show'>
         <Link to="/">Home</Link>
+        <Link to="/services">Services</Link>
           <Link to="/contact">Contact-Us</Link>
           <Link to="/about" style={{marginRight:"5px"}}>About</Link>
           <Link to="https://accounts.zoho.com/signin?servicename=VirtualOffice&signupurl=https://www.zoho.com/mail/zohomail-pricing.html&serviceurl=https://mail.zoho.com" target="_blank"><img style={{width:"20px", height:"14px"}} src="/images/mazuka-mail.jpg" alt="" /></Link>
