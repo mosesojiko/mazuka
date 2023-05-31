@@ -17,14 +17,14 @@ import { CardActionArea } from '@mui/material';
 import background from '../photos/special-background4.jpg';
 //import background2 from '../photos/special-background3.jpg'
 
-
+//style={{ backgroundImage: `url(${background})`,backgroundRepeat:"repeat" }}
 
 function Home() {
   
   return (
     <div style={{maxWidth:"100%"}} id="top">
         
-            <div className='carousal' style={{ backgroundImage: `url(${background})`,backgroundRepeat:"repeat" }}>
+            <div className='carousal'>
                 <div className='description'>
                 <p>Mazuka is a Catering and Housekeeping company registered in Nigeria. Mazuka is also a leading support service company offering a broad range of services particularly marine logistics, chandelling, material sourcing, and procurement on request as well as supply of AGO and other marine equipment and consummables.</p>
             </div>
@@ -33,32 +33,31 @@ function Home() {
             
             <HashLink smooth to="/#catering" style={{textDecoration:"none"}}>
               <div className='caro-div'>
-                    <img src="/images/warehouse1.jpg" alt=""/>
+                    <img src="/images/warehouse3.jpg" alt=""/>
                     
-                    <p>Getting ready for supply</p>
+                    <p>Getting items ready for supply</p>
                 </div>
             </HashLink>
              <HashLink smooth to="/#catering" style={{textDecoration:"none"}}>
                 <div className='caro-div'>
-                     <img src="/images/catering1.jpeg" alt=""/>
+                     <img src="/images/catering-y.jpeg" alt=""/>
                      
                     <p>Catering Services</p>
                 </div>
               </HashLink>
-
-              <HashLink smooth to="/#catering" style={{textDecoration:"none"}}>
-                <div className='caro-div'>
-                <img src="/images/catering-y.jpeg" alt=""/>
-                  
-                    <p>Catering Services</p>
-                </div>
-                </HashLink>
-               
               
                <HashLink smooth to="/#housekeeping" style={{textDecoration:"none"}}>
                 <div className='caro-div'>
                     <img src="/images/laundry.jpg" alt=""/>
                     <p>House keeping Services</p>
+                </div>
+                </HashLink>
+
+                <HashLink smooth to="/#others" style={{textDecoration:"none"}}>
+                <div className='caro-div'>
+                <img src="/images/jackupbarge.png" alt=""/>
+                  
+                    <p>Equipment Leasing (Marine)</p>
                 </div>
                 </HashLink>
 
@@ -87,6 +86,28 @@ function Home() {
             
             
         </div>
+        {/* adding ourservices*/}
+       
+          <h2 className='profile-header'>Our services</h2>
+          <div className='profile-container'>
+            <div>
+            <img className='profile' src='/images/profile.jpg' alt="" />
+            </div>
+          <div>
+            <ul className='profile-ul'>
+              <li>Catering and Housekeeping</li>
+              <li>Chandelling and Marine Supplies</li>
+              <li>Equipment Leasing (Marine)</li>
+              <li>Marine Consumable Supplies</li>
+              <li>Ago Supplies</li>
+            </ul>
+          </div>
+          </div>
+        
+
+        {/* adding ourservices*/}
+
+
 
         {/* start of catering service */}
         <div className='catering' id="catering">
@@ -335,7 +356,7 @@ function Home() {
         </Link>
         <CardContent className='content'>
           <Typography gutterBottom variant="h5" component="div" sx={{textAlign:"center"}}>
-           Marine Support Service
+           Equipment Leasing
           </Typography>
           <Typography className='typography-content' variant="body2" color="text.secondary" sx={{fontSize:"14px", color:"#4a4a4a", textAlign:"justify"}}>
             On request, we source and lease to our clients House boats, Sport barges, security boats etc

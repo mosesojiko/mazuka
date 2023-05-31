@@ -53,4 +53,7 @@
     .about-description > p {
         font-size: 15px;
     }
+    .about-contact {
+        font-size: 13px;
+    }
 }
