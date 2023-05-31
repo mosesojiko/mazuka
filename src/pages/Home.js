@@ -97,7 +97,7 @@ function Home() {
           <div>
             <ul className='profile-ul'>
               <li>
-              <TypeAnimation
+              <TypeAnimation className="type-animation"
       sequence={[
         'Catering Service', // Types 'One'
         2000, // Waits 1s
