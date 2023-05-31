@@ -5,6 +5,7 @@ import { Carousel } from 'react-responsive-carousel';
 import { Link } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
+import { TypeAnimation } from 'react-type-animation';
 
 
 import Card from '@mui/material/Card';
@@ -14,7 +15,7 @@ import CardMedia from '@mui/material/CardMedia';
 //import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
-import background from '../photos/special-background4.jpg';
+//import background from '../photos/special-background4.jpg';
 //import background2 from '../photos/special-background3.jpg'
 
 //style={{ backgroundImage: `url(${background})`,backgroundRepeat:"repeat" }}
@@ -95,7 +96,22 @@ function Home() {
             </div>
           <div>
             <ul className='profile-ul'>
-              <li>Catering and Housekeeping</li>
+              <li>
+              <TypeAnimation
+      sequence={[
+        'Catering Service', // Types 'One'
+        2000, // Waits 1s
+        'Housekeeping Service', // Deletes 'One' and types 'Two'
+        1000, // Waits 2s
+        'Catering and Housekeeping Service', // Types 'Three' without deleting 'Two'
+        7000,
+      ]}
+      wrapper="span"
+      cursor={false}
+      repeat={Infinity}
+      style={{ fontSize: '22px', display: 'inline-block' }}
+    />
+              </li>
               <li>Chandelling and Marine Supplies</li>
               <li>Equipment Leasing (Marine)</li>
               <li>Marine Consumable Supplies</li>
@@ -124,7 +140,8 @@ function Home() {
         component="img"
         alt=""
         height="140"
-        image="/images/catering/offshore2.jpg"
+        image="/images/catering/escravos.jpg"
+        // image="/images/catering/offshore2.jpg"
       />
       <CardContent className='content'>
         <Typography gutterBottom variant="h5" component="div" sx={{textAlign:"center"}}>

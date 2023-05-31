@@ -7,7 +7,7 @@ import About from './pages/About';
 import Navbar from './Navbar';
 import Contact from './pages/Contact';
 import EmailIcon from '@mui/icons-material/Email';
-import Services from './pages/Services';
+//import Services from './pages/Services';
 
 
 
@@ -21,7 +21,7 @@ function App() {
        <Navbar/> 
       <main>
          <Routes>
-         <Route path="/services"  element={<Services />}></Route>
+         {/* <Route path="/services"  element={<Services />}></Route> */}
          <Route path="/contact"  element={<Contact />}></Route>
           <Route path="/about"  element={<About />}></Route>
             <Route path="/" index element={<Home />}></Route>
