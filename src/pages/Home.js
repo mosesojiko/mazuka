@@ -97,14 +97,14 @@ function Home() {
           <div>
             <ul className='profile-ul'>
               <li>
-              <TypeAnimation
+              <TypeAnimation className="type-animation"
       sequence={[
         'Catering Service', // Types 'One'
         2000, // Waits 1s
         'Housekeeping Service', // Deletes 'One' and types 'Two'
         1000, // Waits 2s
         'Catering and Housekeeping Service', // Types 'Three' without deleting 'Two'
-        7000,
+        4000,
       ]}
       wrapper="span"
       cursor={false}

@@ -102,6 +102,9 @@ footer {
   max-width: 50%;
   margin: 5px;
   padding-top: 10px;
+  background-color: #f8f8f8;
+  padding: 5px;
+  border-radius: 15px;
 }
 
 img {
@@ -418,6 +421,9 @@ img:hover {
    margin-left: 1px;
   }
 
+  .type-animation {
+    font-size: 15px !important;
+  }
   .ourservice-container {
     display: flex;
     flex-direction: column;
@@ -467,8 +473,9 @@ img:hover {
 
      .call-to-action > p{
       width: 100%;
-     font-size: 20px;
+     font-size: 16px;
      max-width: 95%;
+     text-align: justify;
      }
 
   /* .mazuka-footer {
