@@ -16,7 +16,6 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 //import background from '../photos/special-background4.jpg';
-//import background2 from '../photos/special-background3.jpg'
 
 //style={{ backgroundImage: `url(${background})`,backgroundRepeat:"repeat" }}
 
@@ -141,7 +140,6 @@ function Home() {
         alt=""
         height="140"
         image="/images/catering/escravos.jpg"
-        // image="/images/catering/offshore2.jpg"
       />
       <CardContent className='content'>
         <Typography gutterBottom variant="h5" component="div" sx={{textAlign:"center"}}>
@@ -274,62 +272,7 @@ function Home() {
           <div className='ourservices' id="others">
             <h2>Other services</h2>
             <div className='ourservice-container'>
-                {/* <div className='ourservice-div'> */}
-                    {/* <Card sx={{ maxWidth: 345 }}>
-      <CardActionArea>
-        <Link to="/catering">
-          <CardMedia
-          component="img"
-          height="140"
-          image="/images/catering1.jpeg"
-          alt=""
-        />
-        </Link>
-        <CardContent>
-            <Typography gutterBottom variant="h5" component="div" sx={{textAlign:"center"}}>
-            Catering/Housekeeping
-          </Typography>
-          
-          <Typography variant="body2" color="text.secondary" sx={{fontSize:"14px", color:"#4a4a4a", textAlign:"justify"}}>
-            Our clients do not run out of groceries as we make provisions for between two to four weeks window for an uninterrupted operations in the event of disruption in supply runs.
-          </Typography>
-          
-          <Link to ="/catering" style={{textDecoration:"none"}}>
-            <Button variant='contained' color="primary" size="small" style={{marginTop:'5px', marginLeft:"60px"}}>Learn More</Button>
-            </Link>
-        </CardContent>
-        
-      </CardActionArea>
-    </Card> */}
-                    {/* <h3>Catering</h3>
-                    <img src="/images/catering1.jpeg" alt="" />
-                    <p>Our clients do not run out of groceries as we make provisions for between two to four weeks window for an uninterrupted operations in the event of disruption in supply runs.</p> */}
-                {/* </div> */}
-                {/* <div>
-                    <Card sx={{ maxWidth: 345 }}>
-      <CardActionArea>
-        <Link to="#">
-          <CardMedia
-          component="img"
-          height="140"
-          image="/images/housekeeping.jpg"
-          alt=""
-        />
-        </Link>
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div" sx={{textAlign:"center"}}>
-           Housekeeping
-          </Typography>
-          <Typography variant="body2" color="text.secondary" sx={{fontSize:"14px", color:"#4a4a4a", textAlign:"justify"}}>
-            Our team is well positioned to cater for both national and expatriate workers to accomodate all shades of nationalities to make them feel at home while at work.
-          </Typography>
-          <Link to ="#" style={{textDecoration:"none"}}>
-            <Button variant='contained' color="primary" size="small" style={{marginTop:'5px', marginLeft:"60px"}}>Learn More</Button>
-            </Link>
-        </CardContent>
-      </CardActionArea>
-    </Card>
-                </div> */}
+                
                 <div>
                     <Card sx={{ maxWidth: 345 }}>
       <CardActionArea>
@@ -349,16 +292,11 @@ function Home() {
            Our clients expressed satisfaction with our services including but not limited to Wrightlinks Logistic Service Limited, Ocean Marine and Tankers Nigeria Limited, Dreging International Service (Nig,) and World Carrier Corporation. 
 
           </Typography>
-          {/* <Link to ="#" style={{textDecoration:"none"}}>
-            <Button variant='contained' color="primary" size="small" style={{marginTop:'5px', marginLeft:"60px"}}>Learn More</Button>
-            </Link> */}
+         
         </CardContent>
       </CardActionArea>
       </Card>
-                    {/* <h3>chandelling</h3>
-                    <img src="/images/ship-chandlers.jpg" alt="" />
-                    <p>Our clients expressed satisfaction with our services including but not limited to Wrightlinks Logistic Service Limited, Ocean Marine and Tankers Nigeria Limited, Dreging International Service (Nig,) and World Carrier Corporation. </p> */}
-
+                    
                 </div>
                 <div>
                     <Card sx={{ maxWidth: 345 }}>
@@ -378,15 +316,11 @@ function Home() {
           <Typography className='typography-content' variant="body2" color="text.secondary" sx={{fontSize:"14px", color:"#4a4a4a", textAlign:"justify"}}>
             On request, we source and lease to our clients House boats, Sport barges, security boats etc
           </Typography>
-          {/* <Link to ="#" style={{textDecoration:"none"}}>
-            <Button variant='contained' color="primary" size="small" style={{marginTop:'5px', marginLeft:"60px"}}>Learn More</Button>
-            </Link> */}
+          
         </CardContent>
       </CardActionArea>
       </Card>
-                    {/* <h3>Marine Support Service</h3>
-                    <img src="/images/marine-support.jpg" alt="" />
-                    <p>On request, we source and lease to our clients House boats, Sport barge, security boats etc</p> */}
+                    
                 </div>
                 
         <Card sx={{ maxWidth: 345 }}>
@@ -405,14 +339,9 @@ function Home() {
         <Typography className='typography-content' variant="body2" color="text.secondary" sx={{fontSize:"14px", color:"#4a4a4a", textAlign:"justify"}}>
           We supply AGO to our numerous clients whenever they are needed.
         </Typography>
-        {/* <Link to ="#" style={{textDecoration:"none"}}>
-            <Button variant='contained' color="primary" size="small" style={{marginTop:'5px', marginLeft:"60px"}}>Learn More</Button>
-            </Link> */}
+        
       </CardContent>
-      {/* <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
-      </CardActions> */}
+      
     </Card>
             
             </div>
