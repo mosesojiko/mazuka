@@ -7,6 +7,7 @@ import About from './pages/About';
 import Navbar from './Navbar';
 import Contact from './pages/Contact';
 import EmailIcon from '@mui/icons-material/Email';
+import Siteverification from './pages/Siteverification';
 
 
 
@@ -21,6 +22,7 @@ function App() {
        <Navbar/> 
       <main>
          <Routes>
+         <Route path="/googleae551f4f065913ad.html"  element={<Siteverification />}></Route>
          <Route path="/contact"  element={<Contact />}></Route>
           <Route path="/about"  element={<About />}></Route>
             <Route path="/" index element={<Home />}></Route>
