@@ -46,7 +46,7 @@ function App() {
               <Link to="/about" style={{marginRight:"5px"}}>About</Link>
             </div>
             <div className='mazuka-footer-contact'>
-              <h4>Contact/Customer Care</h4>
+              <h4>Contact</h4>
               <p><span><EmailIcon/></span> <span style={{marginLeft:"5px"}}>contact@mazukaltd.com</span></p>
              <p><span><EmailIcon/></span> <span style={{marginLeft:"5px"}}>mazukaltd@hotmail.com</span></p>
             </div>
