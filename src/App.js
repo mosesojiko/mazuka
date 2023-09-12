@@ -1,12 +1,12 @@
 import React from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
+import { BrowserRouter } from 'react-router-dom';
+//import Home from './pages/Home';
 import { Link } from 'react-router-dom'
 //import { HashLink } from 'react-router-hash-link';
-import About from './pages/About';
-import Navbar from './Navbar';
-import Contact from './pages/Contact';
-import EmailIcon from '@mui/icons-material/Email';
+//import About from './pages/About';
+//import Navbar from './Navbar';
+//import Contact from './pages/Contact';
+//import EmailIcon from '@mui/icons-material/Email';
 
 
 
@@ -19,16 +19,20 @@ function App() {
     <BrowserRouter>
     <div className='grid-container'>
      
-       <Navbar/> 
+       {/* <Navbar/>  */}
       <main>
-         <Routes>
+        <div className='migrate'>
+          <h1>Hello visitor</h1>
+          <p>Please, visit our website on: https://mazuka.com.ng/ or <Link to="https://mazuka.com.ng/" target="_blank">Click here to visit our website</Link></p>
+        </div>
+         {/* <Routes>
         
          <Route path="/contact"  element={<Contact />}></Route>
           <Route path="/about"  element={<About />}></Route>
             <Route path="/" index element={<Home />}></Route>
-         </Routes>
+         </Routes> */}
       </main>
-       <footer>
+       {/* <footer>
         
         
 
@@ -58,7 +62,7 @@ function App() {
           
         </div>
         
-       </footer>
+       </footer> */}
 
     </div>
     </BrowserRouter>
