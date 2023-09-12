@@ -1,4 +1,10 @@
-html {
+
+.migrate {
+  text-align: center;
+  padding: 10px;
+  max-width: 100%;
+}
+/* html {
   box-sizing: border-box;
 }
 
@@ -26,7 +32,7 @@ code {
   display:flex;
   justify-content: space-between;
   align-items: center;
-  /* background-color: #87ceeb; */
+
   background-color: #2f7ab4;
 }
 
@@ -82,14 +88,14 @@ img:hover {
 .caro-div>p {
   font-size: 20px;
   font-weight: bold;
-  /* background-color: #00688b; */
+
   background-color: #2f7ab4;
   color: #fff;
   padding: 5px;
   border-radius: 10px;
 }
 
-/*style the contend/description of the varoius services on hover*/
+
 .content:hover {
   color: #00688b;
 }
@@ -108,7 +114,7 @@ img:hover {
 
 .ourservices > h2 {
   background-color: black;
-  /* background-color: #00688b; */
+  
   color: #fff;
   padding: 10px;
   padding-top: 40px;
@@ -126,7 +132,7 @@ img:hover {
 }
 
 
-/* experience section */
+
 
 .experience-container {
   display: flex;
@@ -168,7 +174,7 @@ img:hover {
 .policy {
   max-width: 50%;
   font-size: 12px;
-  /* background-color: #00688b; */
+ 
   background-color: #2f7ab4;
   color: #fff;
   padding: 5px;
@@ -191,7 +197,7 @@ img:hover {
 
 
 
-/* from catering page */
+
 
 .catering {
   width: 100%;
@@ -310,7 +316,6 @@ img:hover {
 
 
 
-/* end catering page */
 
 
 
@@ -336,7 +341,7 @@ img:hover {
     }
 
   .description {
-    /* background-color: black; */
+   
     max-width: 100%;
    margin-bottom: 1px;
    margin-left: 1px;
@@ -350,7 +355,7 @@ img:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* flex-wrap: nowrap; */
+
     max-width: 100%;
     padding: 10px;
   }
@@ -521,4 +526,4 @@ img:hover {
       margin: 15px 0;
       font-size: 15px;
      }
-}
+} */
